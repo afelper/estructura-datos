@@ -6,16 +6,19 @@ public class Ejercicio4 {
         var sc = new Scanner(System.in);
 
         System.out.println("Cantidad de grados centígrados: ");
-        var numero = sc.nextInt();
+        var numero = sc.nextInt(); // Captura la temperatura desde el teclado
 
-        var fahrenheit = conversionCentigradosFahrenheit(numero);
-        System.out.println("Grados Fahrenheit: " + fahrenheit);
+        // LLamar el método para convertir celsius a fahrenheit
+        var fahrenheit = conversionCentigradosFahrenheit(numero); // almacenar el retorno del método a la var fahrenheit
+        System.out.println("La conversión es: " + fahrenheit + " Grados Fahrenheit"); //imprimir en pantalla
     }
 
-    public static float conversionCentigradosFahrenheit(int numero){
-        var f=0;
+    //método público y estático de la conversión de grados C a F.
+    public static int conversionCentigradosFahrenheit(int numero){
+        var f=0; // inicializar variable
 
-        f = 32 + (9 * numero / 5);
+        //Paréntesis -> aislar una porción de la expresión de forma que el cálculo se ejecute de forma independiente
+        f = 32 + ((9 * numero) / 5); // formula de conversión + Precedencia
 
        return f;
     }
