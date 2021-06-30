@@ -10,6 +10,7 @@ public class Ejercicio2 {
 
         var digitos = numeroDigitos(numero); // llamado del método static con un parámetro
         System.out.println("El número tiene " + digitos + " cifras"); //imprimir en pantalla
+        sc.close();
     }
 
     public static int numeroDigitos(int numero){

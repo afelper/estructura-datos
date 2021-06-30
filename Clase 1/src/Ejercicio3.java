@@ -11,6 +11,7 @@ public class Ejercicio3 {
         var digitos = numeroDigitos(numero); // llamar al método numeroDigitos y lo guarda en la variable digitos 
         System.out.println("------------------------------------------------");
         System.out.println(digitos); // imprimir en pantalla el resultado
+        sc.close();
     }
 
     public static String numeroDigitos(int numero){
